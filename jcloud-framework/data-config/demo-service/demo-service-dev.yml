@@ -1,0 +1,32 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://122.112.210.160:8000/eureka/
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+spring:
+  redis:
+    host: 122.112.210.156
+    port: 6379
+    password: 1234qwer
+    database: 0
+  rabbitmq:
+    host: 122.112.210.156
+    port: 5672
+    username: admin
+    password: 1234qwer
+    publisher-returns: true
+    publisher-confirms: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://119.3.52.182:3306/test?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
+    username: paladin
+    password: pFR#hV66
+    hikari:
+      connection-test-query: select 1
+
+logging:
+  level:
+    com.baosight.paladin.demo.consumer.persist.mapper: debug
