@@ -11,7 +11,7 @@
         <module>service-parent</module>
         <module>api-parent</module>
         <module>security-parent</module>
-        <module>../tools-parent</module>
+        <module>tools-parent</module>
     </modules>
 
     <packaging>pom</packaging>
