@@ -8,7 +8,7 @@
         <version>2.1.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.cloud.jerry</groupId>
+    <groupId>com.jcloud.framework</groupId>
     <artifactId>eureka-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>eureka</name>
