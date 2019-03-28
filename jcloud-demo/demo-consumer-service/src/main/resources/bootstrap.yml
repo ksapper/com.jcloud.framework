@@ -3,4 +3,4 @@ spring:
     name: demo-consumer-service
   cloud:
     config:
-      uri: http://122.112.210.138:8001
+      uri: http://10.25.164.205:8002

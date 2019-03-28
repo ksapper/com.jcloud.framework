@@ -2,10 +2,10 @@ server:
   port: 8081
 spring:
   profiles:
-    active: @activeprofile@
+    active: dev
   cloud:
     config:
-      profile: @activeprofile@
+      profile: dev
     stream:
       bindings:
         springCloudBusInput:

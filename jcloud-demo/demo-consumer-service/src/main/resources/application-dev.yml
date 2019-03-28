@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://122.112.210.160:8000/eureka/
+      defaultZone: http://10.25.164.205:8001/eureka/
   instance:
     preferIpAddress: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
@@ -29,4 +29,4 @@ spring:
 
 logging:
   level:
-    com.baosight.paladin.demo.consumer.persist.mapper: debug
+    com.jcloud.demo.consumer.persist.mapper: debug

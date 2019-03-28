@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.baosight.paladin.demo.consumer.persist.mapper.OrderInfoMapper" >
-    <insert id="insert" parameterType="com.baosight.paladin.demo.consumer.persist.po.OrderInfo" >
+<mapper namespace="com.jcloud.demo.consumer.persist.mapper.OrderInfoMapper" >
+    <insert id="insert" parameterType="com.jcloud.demo.consumer.persist.po.OrderInfo" >
         insert into order_info
         <trim prefix="(" suffix=")" suffixOverrides="," >
             <if test="orderId != null" >
