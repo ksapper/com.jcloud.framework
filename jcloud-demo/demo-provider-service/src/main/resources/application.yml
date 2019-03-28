@@ -1,0 +1,30 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: @activeprofile@
+  cloud:
+    config:
+      profile: @activeprofile@
+    stream:
+      bindings:
+        springCloudBusInput:
+          group: demo-provider-service
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    sender:
+      type: rabbit
+    locator:
+      discovery:
+        enabled: true
+
+mybatis:
+  mapper-locations: classpath:mybatis-mappers/*.xml
+
+swagger2:
+  title: demo-provider-service
+  description: demo服务者项目
+  contact-name: cy
+  contact-email: 178333@baosight.com

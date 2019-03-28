@@ -1,0 +1,34 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: @activeprofile@
+  cloud:
+    config:
+      profile: @activeprofile@
+    stream:
+      bindings:
+        springCloudBusInput:
+          group: demo-consumer-service
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    sender:
+      type: rabbit
+    locator:
+      discovery:
+        enabled: true
+
+mybatis:
+  mapper-locations: classpath:mybatis-mappers/*.xml
+
+swagger2:
+  title: demo-consumer-service
+  description: demo消费者项目
+  contact-name: cy
+  contact-email: 178333@baosight.com
+
+stubrunner:
+  ids-to-service-ids:
+    demo-provider-service: demo-provider-service
