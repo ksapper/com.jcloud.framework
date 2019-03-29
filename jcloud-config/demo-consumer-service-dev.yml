@@ -1,18 +1,4 @@
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8001/eureka/
-  instance:
-    preferIpAddress: true
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
-
 spring:
-  cloud:
-    config:
-      label: master
-      discovery:
-        enabled: true
-        service-id: config-service
   redis:
     host: 122.112.210.156
     port: 6379
