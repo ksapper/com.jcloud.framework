@@ -3,17 +3,21 @@ server:
   servlet:
     context-path: /
 spring:
+  application:
+    name: config-service
   cloud:
     config:
       server:
-        default-application-name: cloud-config
         git:
-          uri:
-
+          uri:  https://github.com/ksapper/com.jcloud.framework.git
+          search-paths: jcloud-config
+          username: 594212955@qq.com
+          password: ma5215050
+      label: master
 eureka:
   client:
     service-url:
-      defaultZone:  http://10.25.164.205:8001/eureka
+      defaultZone:  http://127.0.0.1:8001/eureka
   instance:
     prefer-ip-address: true
     instance-id:  ${spring.cloud.client.ip-address}:${server.port}
