@@ -3,4 +3,14 @@ spring:
     name: demo-provider-service
   cloud:
     config:
-      uri: http://10.25.164.205:8002
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8001/eureka/
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}

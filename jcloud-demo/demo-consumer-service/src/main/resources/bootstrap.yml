@@ -3,4 +3,7 @@ spring:
     name: demo-consumer-service
   cloud:
     config:
-      uri: http://10.25.164.205:8002
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-service

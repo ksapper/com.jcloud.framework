@@ -1,24 +1,5 @@
 server:
   port: 8080
-spring:
-  profiles:
-    active: dev
-  cloud:
-    config:
-      profile: dev
-    stream:
-      bindings:
-        springCloudBusInput:
-          group: demo-provider-service
-  sleuth:
-    sampler:
-      probability: 1.0
-  zipkin:
-    sender:
-      type: rabbit
-    locator:
-      discovery:
-        enabled: true
 
 mybatis:
   mapper-locations: classpath:mybatis-mappers/*.xml
