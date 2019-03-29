@@ -3,15 +3,13 @@ server:
   servlet:
     context-path: /
 spring:
-  application:
-    name: cloud-config
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: classpatch:/config
+        default-application-name: cloud-config
+        git:
+          uri:
+
 eureka:
   client:
     service-url:
