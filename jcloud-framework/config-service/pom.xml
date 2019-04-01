@@ -11,7 +11,7 @@
     <groupId>com.jcloud.framework</groupId>
     <artifactId>cloud-config</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloud-config</name>
+    <name>cloud-service</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
