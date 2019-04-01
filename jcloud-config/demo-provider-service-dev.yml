@@ -20,4 +20,4 @@ spring:
       connection-test-query: select 1
 logging:
   level:
-    com.jcloud.demo.consumer.persist.mapper: debug
+    com.jcloud.demo.provider.persist.mapper: debug
