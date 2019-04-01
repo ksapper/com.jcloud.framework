@@ -9,9 +9,9 @@ spring:
     config:
       server:
           git:
-          uri:  https://github.com/ksapper/com.jcloud.framework.git
-          search-paths: jcloud-config
-          timeout: 120
+            uri:  https://github.com/ksapper/com.jcloud.framework.git
+            search-paths: jcloud-config
+            timeout: 60
       label: master
 eureka:
   client:
