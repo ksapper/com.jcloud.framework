@@ -1,6 +1,6 @@
 package com.jcloud.demo.consumer.test;
 
-import com.jcloud.demo.consumer.DemoConsumerApplication;
+/*import com.jcloud.demo.consumer.DemoConsumerApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +17,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
-/**
+*//**
  * @Author: cy
- */
+ *//*
 @AutoConfigureMockMvc
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = DemoConsumerApplication.class)
@@ -44,4 +44,4 @@ public class OrderServiceImplTest {
         .andReturn();
 
     }
-}
+}*/
