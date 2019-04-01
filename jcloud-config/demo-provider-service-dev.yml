@@ -21,3 +21,5 @@ spring:
 logging:
   level:
     com.jcloud.demo.provider.persist.mapper: debug
+gril:
+  age: 18
