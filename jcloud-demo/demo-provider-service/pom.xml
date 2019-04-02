@@ -37,7 +37,16 @@
             <version>${jcloud.version}</version>
         </dependency>
         <!-- integration tools end-->
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+        <!-- actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.baosight.paladin</groupId>
             <artifactId>mysql-mybatis-starter</artifactId>
