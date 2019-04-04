@@ -5,7 +5,6 @@ server:
 spring:
   application:
     name: config-service
-  cloud:
     config:
       server:
           git:
@@ -21,6 +20,10 @@ spring:
     password: admin123
     publisher-returns: true
     publisher-confirms: true
+  cloud:
+    bus:
+      trace:
+        enabled: true
 eureka:
   client:
     service-url:
@@ -28,8 +31,3 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id:  ${spring.cloud.client.ip-address}:${server.port}
-management:
-  endpoint:
-    web:
-      exposure:
-        include: bus-refresh
