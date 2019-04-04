@@ -24,7 +24,6 @@ spring:
     stream:
       bindings:
         springCloudBusInput:
-          destination: springCloudBus
           group: config-service
     bus:
       trace:
