@@ -7,6 +7,11 @@ spring:
       discovery:
         enabled: true
         service-id: config-service
+    stream:
+      bindings:
+        # spring cloud bus 绑定的input订阅queue名称
+        springCloudBusInput:
+          group: demo-provider-service
 eureka:
   client:
     service-url:
