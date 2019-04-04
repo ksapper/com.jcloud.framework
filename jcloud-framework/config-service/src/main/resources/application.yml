@@ -5,14 +5,6 @@ server:
 spring:
   application:
     name: config-service
-    config:
-      server:
-          git:
-            uri:  https://github.com/ksapper/com.jcloud.framework.git
-            search-paths: jcloud-config
-            timeout: 60
-            basedir: D:\cloud-config-data
-      label: master
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -21,6 +13,19 @@ spring:
     publisher-returns: true
     publisher-confirms: true
   cloud:
+    config:
+      server:
+        git:
+          uri:  https://github.com/ksapper/com.jcloud.framework.git
+          search-paths: jcloud-config
+          timeout: 60
+          basedir: D:\cloud-config-data
+      label: master
+    stream:
+      bindings:
+        springCloudBusInput:
+          destination: springCloudBus
+          group: config-service
     bus:
       trace:
         enabled: true
