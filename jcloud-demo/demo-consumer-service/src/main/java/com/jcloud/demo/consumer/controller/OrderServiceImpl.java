@@ -43,19 +43,19 @@ public class OrderServiceImpl implements OrderService {
     @PostMapping("/addOrder")
     public OrderAddResponse addOrder(@RequestBody OrderAdd orderAdd, BindingResult bindingResult) {
         OrderAddResponse orderAddResponse = new OrderAddResponse();
-        if(bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
             orderAddResponse.setStatusInfo(0, bindingResult.getFieldError().getDefaultMessage());
             return orderAddResponse;
         }
         String userName = ServiceUtils.getCurrentUsername();
         UserInfo userInfo = userServiceRemote.loadUser(userName);
-        if(userInfo.getStatusCode() == 1){
+        if (userInfo.getStatusCode() == 1) {
             String orderId = bizIdGenerator.nextId();
             orderModel.addOrder(orderAdd, orderId, userInfo.getPhone(), userName);
             orderAddResponse.setStatusInfo(1, orderId);
             orderAddResponse.setStatusCode(1);
             orderAddResponse.setOrderId(orderId);
-        }else{
+        } else {
             orderAddResponse.setStatusInfo(0, userInfo.getMsg());
         }
         return orderAddResponse;

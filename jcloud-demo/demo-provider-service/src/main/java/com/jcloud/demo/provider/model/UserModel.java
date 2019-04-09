@@ -14,7 +14,7 @@ public class UserModel {
     @Autowired
     UserMapper userMapper;
 
-    public User loadUser(String userName){
+    public User loadUser(String userName) {
         return userMapper.load(userName);
     }
 }

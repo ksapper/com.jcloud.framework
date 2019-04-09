@@ -14,15 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ConfigRefreshController {
 
-    @Value(value="${girl.age:}")
+    @Value(value = "${girl.age:}")
     private String girlAge;
 
     /**
      * girl
+     *
      * @return
      */
     @GetMapping("/configdate")
-    public String  loadUser() {
+    public String loadUser() {
         return girlAge;
     }
 }

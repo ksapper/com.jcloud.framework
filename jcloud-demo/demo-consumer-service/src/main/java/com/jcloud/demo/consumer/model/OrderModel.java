@@ -19,7 +19,7 @@ public class OrderModel {
     @Autowired
     OrderInfoMapper orderInfoMapper;
 
-    public int addOrder(OrderAdd orderAdd, String orderId, String phone, String userName){
+    public int addOrder(OrderAdd orderAdd, String orderId, String phone, String userName) {
         OrderInfo order = new OrderInfo();
         BeanUtils.copyProperties(orderAdd, order);
         order.setOrderId(orderId);

@@ -16,8 +16,8 @@ Contract.make {
     }
     response {
         status 200
-        body (
-            '''
+        body(
+                '''
             {
                 "displayName": "系统管理员",
                 "msg": null,

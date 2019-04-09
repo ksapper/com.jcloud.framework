@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan(basePackages = {"com.jcloud.demo.provider.persist.mapper"})
 public class DemoProviderApplication {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         SpringApplication.run(DemoProviderApplication.class, args);
     }
 

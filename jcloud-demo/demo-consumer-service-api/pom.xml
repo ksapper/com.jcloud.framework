@@ -25,7 +25,7 @@
             <artifactId>api-base</artifactId>
             <version>${jcloud.version}</version>
         </dependency>
-       <dependency>
+        <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>${swagger2.version}</version>

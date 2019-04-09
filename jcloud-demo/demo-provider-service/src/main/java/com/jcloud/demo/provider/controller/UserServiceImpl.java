@@ -38,11 +38,11 @@ public class UserServiceImpl implements UserService {
             User user = userModel.loadUser(userName);
             if (ObjectUtils.isEmpty(user)) {
                 userInfo.setStatusInfo(0, "no such user");
-            }else{
+            } else {
                 userInfo.setStatusCode(1);
                 BeanUtils.copyProperties(user, userInfo);
             }
-        }else{
+        } else {
             userInfo.setStatusInfo(0, "empty username");
         }
         return userInfo;

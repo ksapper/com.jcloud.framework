@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.jcloud.demo.consumer.persist.mapper.OrderInfoMapper" >
-    <insert id="insert" parameterType="com.jcloud.demo.consumer.persist.po.OrderInfo" >
+<mapper namespace="com.jcloud.demo.consumer.persist.mapper.OrderInfoMapper">
+    <insert id="insert" parameterType="com.jcloud.demo.consumer.persist.po.OrderInfo">
         insert into order_info
-        <trim prefix="(" suffix=")" suffixOverrides="," >
-            <if test="orderId != null" >
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="orderId != null">
                 order_id,
             </if>
-            <if test="orderName != null" >
+            <if test="orderName != null">
                 order_name,
             </if>
-            <if test="productionCode != null" >
+            <if test="productionCode != null">
                 production_code,
             </if>
-            <if test="userName != null" >
+            <if test="userName != null">
                 user_name,
             </if>
-            <if test="phone != null" >
+            <if test="phone != null">
                 phone,
             </if>
-            <if test="orderStatus != null" >
+            <if test="orderStatus != null">
                 order_status,
             </if>
-            <if test="createTime != null" >
+            <if test="createTime != null">
                 create_time,
             </if>
         </trim>
-        <trim prefix="values (" suffix=")" suffixOverrides="," >
-            <if test="orderId != null" >
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="orderId != null">
                 #{orderId,jdbcType=VARCHAR},
             </if>
-            <if test="orderName != null" >
+            <if test="orderName != null">
                 #{orderName,jdbcType=VARCHAR},
             </if>
-            <if test="productionCode != null" >
+            <if test="productionCode != null">
                 #{productionCode,jdbcType=VARCHAR},
             </if>
-            <if test="userName != null" >
+            <if test="userName != null">
                 #{userName,jdbcType=VARCHAR},
             </if>
-            <if test="phone != null" >
+            <if test="phone != null">
                 #{phone,jdbcType=VARCHAR},
             </if>
-            <if test="orderStatus != null" >
+            <if test="orderStatus != null">
                 #{orderStatus,jdbcType=VARCHAR},
             </if>
-            <if test="createTime != null" >
+            <if test="createTime != null">
                 #{createTime,jdbcType=VARCHAR},
             </if>
         </trim>
