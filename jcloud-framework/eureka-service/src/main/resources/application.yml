@@ -1,0 +1,21 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: eurake-service
+eureka:
+  instance:
+    #服务刷新时间配置,每隔这个时间主动心跳一次
+    lease-renewal-interval-in-seconds: 30
+    #服务过期时间配置，超过时间没有接受到心跳，移除这个服务实例
+    lease-expiration-duration-in-seconds: 90
+  server:
+    #关闭自我保护机制
+    enable-self-preservation: false
+  client:
+    #eurake服务端设置false
+    register-with-eureka: false
+    fetch-registry: false
+    #设置
+    service-url:
+      defaultZone:  http://${spring.cloud.client.ip-address}:${server.port}/eureka/
