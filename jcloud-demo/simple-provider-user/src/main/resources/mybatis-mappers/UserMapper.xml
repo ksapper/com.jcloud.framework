@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.jcloud.framework.movie.persist.mapper.UserMapper">
-    <resultMap id="userMap" type="com.jcloud.framework.movie.persist.po.User">
+<mapper namespace="com.jcloud.framework.user.persist.mapper.UserMapper">
+    <resultMap id="userMap" type="com.jcloud.framework.user.persist.po.User">
         <id column="user_name" property="userName" jdbcType="VARCHAR"/>
         <result column="display_name" property="displayName" jdbcType="VARCHAR"/>
         <result column="phone" property="phone" jdbcType="VARCHAR"/>

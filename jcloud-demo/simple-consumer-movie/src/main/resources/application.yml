@@ -5,3 +5,9 @@ eureka:
   instance:
     preferIpAddress: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
+logging:
+  level:
+    com:
+      jcloud:
+        framework:
+          movie:  debug

@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8082
 spring:
   application:
     name: simple-provider-user
@@ -12,3 +12,9 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
 mybatis:
   mapper-locations: classpath:mybatis-mappers/*.xml
+logging:
+  level:
+    com:
+      jcloud:
+        framework:
+          user:  debug

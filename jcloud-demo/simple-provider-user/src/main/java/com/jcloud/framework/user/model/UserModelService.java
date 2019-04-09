@@ -1,7 +1,7 @@
-package com.jcloud.framework.movie.model;
+package com.jcloud.framework.user.model;
 
-import com.jcloud.framework.movie.persist.mapper.UserMapper;
-import com.jcloud.framework.movie.persist.po.User;
+import com.jcloud.framework.user.persist.mapper.UserMapper;
+import com.jcloud.framework.user.persist.po.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

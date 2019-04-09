@@ -1,4 +1,4 @@
-package com.jcloud.framework.movie;
+package com.jcloud.framework.user;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

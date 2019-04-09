@@ -1,4 +1,4 @@
-package com.jcloud.framework.movie;
+package com.jcloud.framework.user;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@MapperScan(basePackages = {"com.jcloud.framework.movie.persist.mapper"})
+@MapperScan(basePackages = {"com.jcloud.framework.user.persist.mapper"})
 public class SimpleConsumerMovieApplication {
 
     @Bean
