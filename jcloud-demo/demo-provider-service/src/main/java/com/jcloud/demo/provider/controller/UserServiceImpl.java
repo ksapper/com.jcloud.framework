@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
         if (StringUtils.hasText(userName)) {
             User user = userModel.loadUser(userName);
             if (ObjectUtils.isEmpty(user)) {
-                userInfo.setStatusInfo(0, "no such user");
+                userInfo.setStatusInfo(0, "no such movie");
             } else {
                 userInfo.setStatusCode(1);
                 BeanUtils.copyProperties(user, userInfo);

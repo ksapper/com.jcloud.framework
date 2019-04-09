@@ -1,7 +1,7 @@
-package com.jcloud.framework.user.controller;
+package com.jcloud.framework.movie.controller;
 
-import com.jcloud.framework.user.model.UserModelService;
-import com.jcloud.framework.user.persist.po.User;
+import com.jcloud.framework.movie.model.UserModelService;
+import com.jcloud.framework.movie.persist.po.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

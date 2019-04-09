@@ -1,6 +1,6 @@
-package com.jcloud.framework.user.persist.mapper;
+package com.jcloud.framework.movie.persist.mapper;
 
-import com.jcloud.framework.user.persist.po.User;
+import com.jcloud.framework.movie.persist.po.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

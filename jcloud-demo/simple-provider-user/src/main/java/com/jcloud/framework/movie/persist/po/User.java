@@ -1,4 +1,4 @@
-package com.jcloud.framework.user.persist.po;
+package com.jcloud.framework.movie.persist.po;
 
 import lombok.Data;
 
