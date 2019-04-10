@@ -26,7 +26,7 @@ public class MovieController {
     @GetMapping("/load-instance")
     public void loadUserInstance(){
         ServiceInstance serviceInstance = loadBalancerClient.choose("simple-provider-user");
-        log.info("%s:%s:%s",serviceInstance.getInstanceId(),serviceInstance.getHost(),serviceInstance.getPort());
+        log.info(serviceInstance.getInstanceId()+":"+serviceInstance.getHost()+":"+serviceInstance.getPort());
     }
 
 }
