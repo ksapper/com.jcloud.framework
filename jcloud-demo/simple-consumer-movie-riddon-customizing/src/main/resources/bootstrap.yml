@@ -1,0 +1,14 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: simple-consumer-movie-ribbon-customizing
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=UTC
+    password: root
+    username: root
+    hikari:
+      connection-test-query: select 1
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mybatis-mappers/*.xml

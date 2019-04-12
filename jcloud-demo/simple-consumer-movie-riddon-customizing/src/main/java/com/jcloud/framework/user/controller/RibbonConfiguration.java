@@ -1,0 +1,16 @@
+package com.jcloud.framework.user.controller;
+
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class RibbonConfiguration {
+
+    @Bean
+    public IRule ribbonRule(){
+        System.out.println("--random--");
+        return  new RandomRule();
+    }
+}
